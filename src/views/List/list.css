@@ -1,0 +1,158 @@
+.box {
+    height: calc(60vh);
+    padding-top: 80px;
+    background-color: #000000;
+}
+
+.yuan {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: scale(1.5);
+    position: relative;
+    /* border: 4px solid rgb(177, 216, 209); */
+}
+
+.yuan,
+.覆盖,
+.覆盖1 {
+    background-color: rgb(229, 125, 33);
+}
+
+#指针A,
+#秒针A {
+    width: 100px;
+    height: 1px;
+    transform-origin: center;
+    position: absolute;
+    background-color: #ececec;
+}
+
+#指针A {
+    top: 49.4%;
+    z-index: 1;
+}
+
+#秒针A {
+    top: 49.4%;
+}
+
+.覆盖 {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: 2; */
+}
+
+.覆盖1 {
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.圆心 {
+    width: 2px;
+    height: 2px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+#时针lines,
+#分针lines,
+#秒针lines {
+    position: absolute;
+    top: 49.9%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 3;
+    /* transform: rotate(-90deg); */
+    transform-origin: left center;
+
+}
+
+#时针lines {
+    width: 30px;
+    height: 1px;
+    background-color: rgb(89, 176, 220);
+}
+
+#分针lines {
+    width: 40px;
+    height: 1px;
+    /* transform: rotate(-60deg); */
+    background-color: rgb(89, 176, 220);
+}
+
+#秒针lines {
+    width: 44px;
+    height: 1px;
+    /* transform: rotate(-30deg); */
+    background-color: rgb(89, 176, 220);
+}
+
+
+#num12-6,
+#num1-5,
+#num2-4,
+#num11-7,
+#num9-3,
+#num10-8 {
+    font-size: 12px;
+    position: absolute;
+    z-index: 2;
+}
+
+/* #num12-6 {
+    height: 134px;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(-2deg);
+}
+*/
+
+#num12-6 {
+    top: 6%;
+    left: 44%;
+}
+
+#num1-5 {
+    top: 10%;
+    right: 27%;
+}
+
+#num2-4 {
+    top: 22%;
+    right: 14%;
+}
+
+#num11-7 {
+    top: 10%;
+    left: 27%;
+}
+
+#num10-8 {
+    top: 22%;
+    left: 14%;
+}
+
+#num9-3 {
+    display: flex;
+    top: 40%;
+    left: 10%;
+}

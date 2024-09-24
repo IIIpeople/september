@@ -1,0 +1,106 @@
+@import './base.css';
+
+/* width: fit-content;//宽度自适应内容 */
+html,
+body,
+#app {
+  height: calc(100vh);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-image: url('../image/235447Ss6K9.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#app .el-aside {
+  padding: 0;
+  height: calc(100vh);
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(165, 165, 165));
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+#app .el-header {
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(0, 0, 0));
+  /* line-height: 3.75rem; */
+}
+
+#app .el-main {
+  height: calc(100vh - 3.75rem);
+  overflow: hidden;
+  overflow-y: auto;
+  /* padding: 0; */
+  /* background-color: rgb(155, 155, 155); */
+}
+
+#app .webkit::-webkit-scrollbar {
+  width: 6px;
+  /* 滚动条宽度 */
+}
+
+/* 自定义颜色变量 */
+:root {
+  --color-35: #353535;
+  --color-86: #86c3a6;
+}
+
+#app .webkit::-webkit-scrollbar-track {
+  background-color: var(--color-35);
+  border-radius: 3px;
+  /* 滚动条轨道背景色 */
+}
+
+#app .webkit::-webkit-scrollbar-thumb {
+  background-color: var(--color-86);
+  /* 滚动条手柄颜色 */
+  border-radius: 3px;
+  /* 滚动条手柄圆角 */
+}
+
+/* // ------el-input的样式 */
+/* ::v-deep .el-input__inner::placeholder {
+  color: rgb(82, 82, 82);
+}
+
+::v-deep .el-input__inner {
+  color: rgb(0, 0, 0);
+}
+
+::v-deep .el-input__wrapper {
+  background-color: rgba(248, 248, 248, 0.2);
+  border: 1px solid green;
+} */
+
+/* //------el-table的样式 */
+/* ::v-deep .el-table__cell {
+  color: rgb(0, 0, 0);
+}
+
+::v-deep .el-table tr {
+  color: rgb(0, 0, 0);
+  background-color: rgba(248, 248, 248, 0.2);
+} */
+
+/* //------el-tabs的样式 */
+/* ::v-deep .el-tabs__item {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 16px;
+  font-family: '楷体';
+}
+
+::v-deep .el-tabs__item.is-active {
+  color: rgb(255, 157, 157);
+  font-weight: 700;
+  font-size: 16px;
+  font-family: '楷体';
+}
+
+::v-deep .el-tabs__item:hover {
+  color: rgb(255, 157, 157);
+}
+
+::v-deep .el-tabs__active-bar {
+  background-color: rgb(255, 157, 157);
+} */
